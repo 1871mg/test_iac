@@ -6,6 +6,7 @@ import fb from './img/fb.svg';
 import vk from './img/vk.svg';
 import tw from './img/tw.svg';
 import od from './img/od.svg';
+import arrow from './img/arrow.svg';
 // import {Link} from "react-router-dom";
 
 function Main() {
@@ -78,7 +79,12 @@ function Main() {
 
 				<div className={styles.maincontainerbottom}>
 					<div className={styles.maintexth5}>Оставить комментарий</div>
-					<textarea className={styles.maininput}>Все комментарии взяты с сайта инициатив Ростова-на-Дону для прмиера :)</textarea>
+
+					<div className={styles.textareaandbutton}>
+						<textarea className={styles.maintextarea}>Все комментарии взяты с сайта инициатив Ростова-на-Дону для прмиера :)</textarea>
+						<div className={styles.textareabutton}><img className={styles.textareabuttonimg} src = {arrow} alt="" /></div>
+					</div>
+
 					<div className={styles.maintexth5}>Геннадий Сергейчик</div>
 					<div className={styles.maintextcomment}>27 дня назад в 20:48</div>
 					<div className={styles.maintext}>А вы, для начала, попробуйте восстановить просто трамвайную ветку, по 39-й линии, до ЖК"Красный Аксай", да по Ченцова, от 14-й линии, до 26-й, как было до войны, у "плохих" коммунистов, и посмотрите окупаемость, сейчас стало модно всё считать, демократия-с. Тут только по Ченцова сколько надо перекладывать коммуникаций из-за простых рельсов. А мечтать о монорельсе, так посмотрите, как в Москве, с чем уже столкнулись, с какими проблемами. А ведь там средств побольше.</div>
@@ -101,7 +107,14 @@ function Main() {
 					<div className={styles.maintextcomment}>27 дня назад в 20:48</div>
 					<div className={styles.maintext}>Один день для Вас не в счет? Геннадий а не будет ли два снегопада в следующем году?  Я понял деньгами Вас работать не заставишь. Вам пол дня прогулять за оклад подавай. Но это не демократия. Это менталитет.</div>
 					<div className={styles.maintextcancel}>Отмена</div>
-					<div className={styles.maininput}><div className={styles.maintextinput}>Ок. Тогда зачем старые рельсы выдернули от северного, по нагибина, по текучева и буденновскому , до ц. Рынка??? Новые не положили и все в асфальт. А металл продали и и бабки попелили(((</div></div>
+
+					<div className={styles.textareaandbutton}>
+						<div className={styles.maininput}><div className={styles.maintextinput}>Ок. Тогда зачем старые рельсы выдернули от северного, по нагибина, по текучева и буденновскому , до ц. Рынка??? Новые не положили и все в асфальт. А металл продали и и бабки попелили(((</div></div>
+						<div className={styles.textareabutton2}><img className={styles.textareabuttonimg} src = {arrow} alt="" /></div>
+					</div>
+
+
+
 
 				</div>
 
