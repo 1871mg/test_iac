@@ -1,0 +1,50 @@
+.footer2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #09095A;
+    width: 100%;
+    height: 98px;
+}
+
+.footermenucontainer {
+    display: flex;
+    flex-direction: column;
+    width: 1800px;
+    height: 58px;
+    margin: -20px 60px 0 60px;
+}
+
+.footermenutext {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0 0 0;
+}
+
+.footermenutextspan {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #B0C6E1;
+}
+
+.footer2link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #B0C6E1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer2email {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2ED4E2;
+    text-decoration: none;
+    cursor: pointer;
+}

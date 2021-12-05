@@ -10,40 +10,24 @@
     border-bottom-style: solid;
     border-bottom-color: #232376;
     border-bottom-width: 1px;
-    position: fixed;
-    z-index: 99;
-}
-
-.navbar:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*background-color: darkviolet;*/
 }
 
 .navbarcontainer {
-    position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 1802px;
     height: 36px;
-    padding: 0 60px 0 60px;
-    z-index: 5;
+    margin: 0 60px 0 60px;
 }
 
 .navbarimg {
     display: flex;
-    justify-content: flex-start;
     height: 36px;
 }
 
 .links {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
 }
 
 .navbarlink {
