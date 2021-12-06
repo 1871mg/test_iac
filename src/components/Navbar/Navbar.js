@@ -10,7 +10,9 @@ function Navbar() {
 
 			<div className={styles.navbar}>
 				<div className={styles.navbarcontainer}>
+
 					<Link to='/'><img className={styles.navbarimg} src={logo} alt="ITMO" /></Link>
+
 					<ul className={styles.links}>
 						<Link className={styles.navbarlink} to='/about'>О проекте</Link>
 						<Link className={styles.navbarlink} to='/conditions'>Условия участия</Link>

@@ -7,9 +7,7 @@ function Footer() {
 
 	return (
 		<div>
-
 			<div className={styles.footer}>
-
 				<div className={styles.footercontainer}>
 					<Link to='/'><img className={styles.navbarimg} src={logo} alt="ITMO" /></Link>
 					<ul className={styles.footerlinks}>
@@ -17,13 +15,7 @@ function Footer() {
 						<Link className={styles.footerlink} to='/conditions'>Условия участия</Link>
 					</ul>
 				</div>
-
-
-
 			</div>
-
-
-
 		</div>
 	);
 }

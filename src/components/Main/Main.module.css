@@ -44,6 +44,12 @@
     font-weight: 600;
     line-height: 170%;
 }
+.maintextbottom {
+    padding: 13px 0 0 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 170%;
+}
 
 .maintexth5 {
     padding: 80px 0 0 0;
@@ -54,7 +60,7 @@
     color: white;
 }
 .maintexth5plus23pxbottom {
-    padding: 80px 0 32px 0;
+    padding: 80px 0 23px 0;
     font-style: italic;
     font-size: 30px;
     font-weight: 700;
@@ -84,6 +90,10 @@
     font-weight: 600;
     line-height: 70%;
     color: white;
+}
+
+.maintextvotetimespan320 {
+    display: none;
 }
 
 .maintexthide {
@@ -417,16 +427,28 @@ textarea {
         line-height: 34px;
         text-shadow: 2px 2px 0 #2ED4E2, 0 0 20px #73F4FF;
     }
+    .maincontainerleftright {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 0 20px 0;
+    }
     .maincontainerleft {
-        width: 288px;
+        display: flex;
+        align-items: center;
         flex-direction: column;
     }
     .mainimg {
         width: 288px;
-        padding: 0 0 0 0;
+        padding: 25px 0 14px 0;
     }
     .maintext {
-        padding: 12px 0 0 0;
+        display: none;
+    }
+    .maintext320 {
+        width: 288px;
+        display: flex;
+        padding: 16px 0 0 0;
         font-size: 14px;
         font-weight: 600;
         line-height: 160%;
@@ -436,11 +458,180 @@ textarea {
     }
     .maintextshow {
         display: flex;
+        width: 288px;
         padding: 12px 0 0 0;
         font-size: 16px;
         font-weight: 700;
         line-height: 71%;
         color: #2ED4E2;
         text-shadow: 0 0 5px #73F4FF;
+    }
+    .maincontainerright {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .yellowbutton {
+        margin: 40px 0 0 0;
+        width: 276px;
+        height: 55px;
+      }
+    .yellowbutton:hover {
+       box-shadow: 0 0 30px rgba(233, 184, 83, 0.8);
+    }
+    .yellowbuttontext {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .maintexth5 {
+        display: flex;
+        width: 288px;
+        padding: 50px 0 0 0;
+        font-size: 21px;
+    }
+    .maintexth5plus23pxbottom {
+        display: flex;
+        width: 288px;
+        padding: 50px 0 0 0;
+        font-size: 21px;
+    }
+    .cyanpinkbuttons {
+        display: flex;
+        width: 288px;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 27px 0 0 0;
+    }
+    .cyanbutton {
+        margin: 0;
+        width: 78px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .pinkbutton {
+        margin: 0;
+        width: 122px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .line {
+        width: 288px;
+        padding: 27px 0 0px 0;
+    }
+    .maintextvote {
+        width: 288px;
+        padding: 20px 0 0 0;
+        font-size: 14px;
+    }
+    .maintextvotespan {
+        width: 288px;
+        padding: 20px 0 0 0;
+        font-size: 14px;
+    }
+    .maintextvotetimespan {
+        display: none;
+    }
+    .maintextvotetimespan320 {
+        display: block;
+        width: 288px;
+        padding: 11px 0 0 0;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 70%;
+        color: white;
+    }
+
+    .socials {
+        display: flex;
+        width: 288px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0 0 0;
+    }
+    .social {
+        margin: 0 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 54px;
+        height: 50px;
+        cursor: pointer;
+        background: #201C6C;
+        border-radius: 2px;
+        transform: skew(-11deg);
+    }
+    .socialimg {
+        max-width: 55%;
+        max-height: 55%;
+    }
+    .maincontainerbottom {
+        width: 288px;
+    }
+    .maintextinput {
+        padding: 15px 20px 0 20px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+    }
+
+    .textareaandbutton {
+        width: 248px;
+        /*height: 150px;*/
+        display: inline-block;
+        position: relative;
+    }
+    textarea {
+        width: 100%;
+        height: 135px;
+        font-size: 14px;
+        line-height: 160%;
+     }
+    .maintextarea {
+        margin: 30px 0 0 0;
+        padding: 15px 20px 0 20px;
+    }
+    .textareabutton {
+        bottom: -20px;
+        right: -12px;
+        width: 54px;
+        height: 54px;
+    }
+    .textareabutton2 {
+        bottom: -20px;
+        right: -12px;
+        width: 54px;
+        height: 54px;
+    }
+    .textareabuttonimg {
+        width: 46%;
+    }
+    .maintextcomment {
+        font-size: 14px;
+        line-height: 10px;
+        margin: 24px 0 0px 0;
+    }
+    .maintextbottom {
+        padding: 22px 0 0 0;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    .maintextanswer {
+        margin: 20px 0 0 0;
+        font-size: 16px;
+        line-height: 12px;
+    }
+    .maintexth70pxright {
+        padding: 0 0 0 20px;
+    }
+    .maintextcancel {
+        font-size: 16px;
+        line-height: 12px;
+        margin: 16px 0 -35px 0;
+    }
+    .maininput {
+        width: 288px;
+        height: 209px;
     }
 }
