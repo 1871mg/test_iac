@@ -29,6 +29,7 @@ ul {
 @media (min-width: 768px) and (max-width: 1299px) {
     html,body {
         background-image: url(./img/background-blurmini.png);
+        background-repeat: no-repeat;
     }
 }
 

@@ -44,40 +44,45 @@ function Main() {
 						</div>
 					</div>
 
-
-					<div className={styles.maincontainerright}>
-						<div className={styles.yellowbutton}>
-							<div className={styles.yellowbuttontext}>Реализовать инициативу</div>
-						</div>
-
-						<div className={styles.maintexth5}>Голосовать</div>
-						<div className={styles.cyanpinkbuttons}>
-							<div className={styles.cyanbutton}>
-								<div className={styles.cyanbuttontext}>За</div>
-							</div>
-							<div className={styles.pinkbutton}>
-								<div className={styles.pinkbuttontext}>Против</div>
-							</div>
-						</div>
-
-						<div className={styles.maintexth5}>Статистика</div>
-						<img className={styles.line} src = {line} alt="" />
-						<div className={styles.maintextvote}>За: <span className={styles.maintextvotespan}>11 789</span></div>
-						<div className={styles.maintextvote}>Против: <span className={styles.maintextvotespan}>23 213</span></div>
-						<div className={styles.maintextvote}>Всего: <span className={styles.maintextvotespan}>35 002</span></div>
-
-						<div className={styles.maintexth5}>Поделиться</div>
-						<div className={styles.socials}>
-							<div className={styles.social}><img className={styles.socialimg} src = {fb} alt="" /></div>
-							<div className={styles.social}><img className={styles.socialimg} src = {vk} alt="" /></div>
-							<div className={styles.social}><img className={styles.socialimg} src = {tw} alt="" /></div>
-							<div className={styles.social}><img className={styles.socialimg} src = {od} alt="" /></div>
+					<div className={styles.yellowbutton}>
+						<div className={styles.yellowbuttontext}>Реализовать инициативу</div>
 					</div>
 
-						<div className={styles.maintexth5plus23pxbottom}>Сроки</div>
-						<div className={styles.maintextvote}>До конца голосования осталось: <span className={styles.maintextvotetimespan}>41 день</span></div>
-						<div className={styles.maintextvotetimespan320}>41 день</div>
+					<div className={styles.maincontainerright}>
 
+
+
+						<div className={styles.left768}>
+							<div className={styles.maintexth5}>Голосовать</div>
+							<div className={styles.cyanpinkbuttons}>
+								<div className={styles.cyanbutton}>
+									<div className={styles.cyanbuttontext}>За</div>
+								</div>
+								<div className={styles.pinkbutton}>
+									<div className={styles.pinkbuttontext}>Против</div>
+								</div>
+							</div>
+
+							<div className={styles.maintexth5}>Статистика</div>
+							<img className={styles.line} src = {line} alt="" />
+							<div className={styles.maintextvote}>За: <span className={styles.maintextvotespan}>11 789</span></div>
+							<div className={styles.maintextvote}>Против: <span className={styles.maintextvotespan}>23 213</span></div>
+							<div className={styles.maintextvote}>Всего: <span className={styles.maintextvotespan}>35 002</span></div>
+						</div>
+
+						<div className={styles.right768}>
+							<div className={styles.maintexth5}>Поделиться</div>
+							<div className={styles.socials}>
+								<div className={styles.social}><img className={styles.socialimg} src = {fb} alt="" /></div>
+								<div className={styles.social}><img className={styles.socialimg} src = {vk} alt="" /></div>
+								<div className={styles.social}><img className={styles.socialimg} src = {tw} alt="" /></div>
+								<div className={styles.social}><img className={styles.socialimg} src = {od} alt="" /></div>
+							</div>
+
+							<div className={styles.maintexth5plus23pxbottom}>Сроки</div>
+							<div className={styles.maintextvote}>До конца голосования осталось: <span className={styles.maintextvotetimespan}>41 день</span></div>
+							<div className={styles.maintextvotetimespan320}>41 день</div>
+						</div>
 					</div>
 				</div>
 
