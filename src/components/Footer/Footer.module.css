@@ -55,20 +55,30 @@
 
 @media (max-width: 767px) {
     .footer {
-        /*display: block;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
-        /*flex-direction: column;*/
-        /*width: 100%;*/
+        width: 100%;
         height: 120px;
         border-bottom-style: none;
+        margin: 87px 0 0 0;
     }
     .footercontainer {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
         height: 24px;
+        margin: 0;
         padding: 0 16px 0 16px;
+    }
+    .footerlinks {
+        display: flex;
+        flex-direction: column;
+    }
+    .footerlink {
+        padding: 10px 0 0 0;
+        font-size: 14px;
+        align-self: flex-start;
     }
     .navbarimg {
         height: 24px;
+        margin: -20px 0 0 0;
     }
-
  }

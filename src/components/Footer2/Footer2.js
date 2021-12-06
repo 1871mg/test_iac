@@ -7,17 +7,25 @@ function Footer2() {
 		<div className={styles.footer2}>
 
 			<div className={styles.footermenucontainer}>
-
 				<div className={styles.footermenutext}>
-					<p className={styles.footermenutextspan}>Информация © 1993–2020 Университет ИТМО</p>
-					<p className={styles.footermenutextspan}>Остались вопросы? Пишите <span className={styles.footer2email}>future@itmo.ru</span></p>
+					<div className={styles.footermenutextspan}>Информация © 1993–2020 Университет ИТМО</div>
+					<div className={styles.footermenutextspan}>Остались вопросы? Пишите <span className={styles.footer2email}>future@itmo.ru</span></div>
 				</div>
-
 				<div className={styles.footermenutext}>
-					<Link className={styles.footer2link} to='/rules'>Правила использования информации в доменной зоне itmo.ru</Link>
-					<Link className={styles.footer2link} to='/policy'>Политика обработки данных</Link>
+					<div><Link className={styles.footer2link} to='/rules'>Правила использования информации в доменной зоне itmo.ru</Link></div>
+					<div><Link className={styles.footer2link} to='/policy'>Политика обработки данных</Link></div>
 				</div>
+			</div>
 
+			<div className={styles.footermenucontainer320}>
+				<div className={styles.footermenutext}>
+					<div className={styles.footermenutextspan}>Информация © 1993–2020 Университет ИТМО</div>
+					<div className={styles.paddingtop12px}><Link className={styles.footer2link} to='/rules'>Правила использования информации в доменной зоне itmo.ru</Link></div>
+				</div>
+				<div className={styles.footermenutext}>
+					<div className={styles.footermenutextspan}>Остались вопросы? Пишите <span className={styles.footer2email}>future@itmo.ru</span></div>
+					<div className={styles.paddingtop12px}><Link className={styles.footer2link} to='/policy'>Политика обработки данных</Link></div>
+				</div>
 			</div>
 
 		</div>

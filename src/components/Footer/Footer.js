@@ -10,10 +10,10 @@ function Footer() {
 			<div className={styles.footer}>
 				<div className={styles.footercontainer}>
 					<Link to='/'><img className={styles.navbarimg} src={logo} alt="ITMO" /></Link>
-					<ul className={styles.footerlinks}>
+					<div className={styles.footerlinks}>
 						<Link className={styles.footerlink} to='/about'>О проекте</Link>
 						<Link className={styles.footerlink} to='/conditions'>Условия участия</Link>
-					</ul>
+					</div>
 				</div>
 			</div>
 		</div>
