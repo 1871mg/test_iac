@@ -52,8 +52,10 @@ function Main() {
 
 					<div className={styles.maincontainerright}>
 
-					<div className={styles.yellowbutton}>
-						<div className={styles.yellowbuttontext}>Реализовать инициативу</div>
+					<div className={styles.desktop}>
+						<div className={styles.yellowbutton}>
+							<div className={styles.yellowbuttontext}>Реализовать инициативу</div>
+						</div>
 					</div>
 
 					<div className={styles.iphone}>
@@ -62,10 +64,7 @@ function Main() {
 				  	</div>
 					</div>
 
-
-
-
-						{/*<div className={styles.left768}>*/}
+						<div className={styles.left768}>
 							<div className={styles.maintexth5}>Голосовать</div>
 							<div className={styles.cyanpinkbuttons}>
 								<div className={styles.cyanbutton}>
@@ -81,16 +80,16 @@ function Main() {
 							<div className={styles.maintextvote}>За: <span className={styles.maintextvotespan}>11 789</span></div>
 							<div className={styles.maintextvote}>Против: <span className={styles.maintextvotespan}>23 213</span></div>
 							<div className={styles.maintextvote}>Всего: <span className={styles.maintextvotespan}>35 002</span></div>
-						{/*</div>*/}
+						</div>
 
-						{/*<div className={styles.right768}>*/}
+						<div className={styles.right768}>
 							<div className={styles.maintexth5}>Поделиться</div>
 							<div className={styles.socials}>
 								<div className={styles.social}><img className={styles.socialimg} src = {fb} alt="" /></div>
 								<div className={styles.social}><img className={styles.socialimg} src = {vk} alt="" /></div>
 								<div className={styles.social}><img className={styles.socialimg} src = {tw} alt="" /></div>
 								<div className={styles.social}><img className={styles.socialimg} src = {od} alt="" /></div>
-							{/*</div>*/}
+							</div>
 
 							<div className={styles.maintexth5plus23pxbottom}>Сроки</div>
 							<div className={styles.maintextvote}>До конца голосования осталось: <span className={styles.maintextvotetimespan}>41 день</span></div>
@@ -134,7 +133,6 @@ function Main() {
 						<div className={styles.maininput}><div className={styles.maintextinput}>Ок. Тогда зачем старые рельсы выдернули от северного, по нагибина, по текучева и буденновскому , до ц. Рынка??? Новые не положили и все в асфальт. А металл продали и и бабки попелили(((</div></div>
 						<div className={styles.textareabutton2}><img className={styles.textareabuttonimg} src = {arrow} alt="" /></div>
 					</div>
-
 
 
 

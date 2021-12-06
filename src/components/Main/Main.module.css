@@ -24,15 +24,10 @@
 }
 
 .maincontainerleftright {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0 0 100px 0;
-}
-.left768 {
-    display: block;
-}
-.right768 {
-    display: block;
-    margin: 0 0 0 30px;
 }
 
 .maincontainerleft {
@@ -118,8 +113,9 @@
 .maincontainerright {
     width: 416px;
 }
-
-
+.desktop {
+    display: flex;
+}
 .ipad {
     display: none;
 }
@@ -380,476 +376,471 @@ textarea {
     transition: 300ms;
 }
 
+@media (min-width: 768px) and (max-width: 1299px) {
+    .main {
+        padding: 0;
+    }
+    .maincontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 44px 0 0 0;
+    }
+    .heading {
+        padding: 0 15px 3px 15px;
+        font-size: 37px;
+        line-height: 40px;
+    }
+    .maincontainerleftright {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 0 0 0;
+    }
+    .left768 {
+        display: block;
+    }
+    .right768 {
+        display: block;
+        margin: 0 0 0 30px;
+    }
 
+    .maincontainerleft {
+        width: 738px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mainimg {
+        width: 100%;
+        padding: 50px 0 35px 0;
+    }
+    .maintext {
+        padding: 12px 0 0 0;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 160%;
+    }
+    .maintexthide {
+        display: none;
+    }
+    .maintextshow {
+        width: 738px;
+        display: flex;
+        padding: 15px 0 0 0;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 160%;
+        color: #2ED4E2;
+        text-shadow: 0 0 5px #73F4FF;
+        cursor: pointer;
+    }
+    .maincontainerright {
+        display: flex;
+        flex-direction: row;
+    }
+    .desktop {
+        display: none;
+    }
+    .ipad {
+        display: block;
+    }
+    .iphone {
+        display: none;
+    }
+    .yellowbutton {
+        margin: 35px 0 0 8px;
+        width: 335px;
+        height: 70px;
+    }
+    .yellowbutton:hover {
+        box-shadow: 0 0 30px rgba(233, 184, 83, 0.8);
+    }
+    .yellowbuttontext {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .maintexth5 {
+        display: flex;
+        width: 328px;
+        padding: 70px 0 0 0;
+        font-size: 24px;
+    }
+    .maintexth5plus23pxbottom {
+        display: flex;
+        width: 328px;
+        padding: 50px 0 0 0;
+        font-size: 21px;
+    }
+    .cyanpinkbuttons {
+        display: flex;
+        width: 328px;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 27px 0 0 0;
+    }
+    .cyanbutton {
+        margin: 0;
+        width: 78px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .pinkbutton {
+        margin: 0;
+        width: 122px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .line {
+        width: 354px;
+        padding: 27px 0 0 0;
+    }
+    .maintextvote {
+        width: 328px;
+        padding: 20px 0 0 0;
+        font-size: 14px;
+    }
+    .maintextvotespan {
+        width: 328px;
+        padding: 20px 0 0 0;
+        font-size: 14px;
+    }
+    .maintextvotetimespan {
+        width: 328px;
+        padding: 11px 0 0 0;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 70%;
+        color: white;
+    }
+    .maintextvotetimespan320 {
+        display: none;
+    }
+    .socials {
+        display: flex;
+        width: 355px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 0 0 0;
+    }
+    .social {
+        margin: 0 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        cursor: pointer;
+        background: #201C6C;
+        border-radius: 2px;
+        transform: skew(-11deg);
+    }
+    .socialimg {
+        max-width: 55%;
+        max-height: 55%;
+    }
+    .maincontainerbottom {
+        width: 738px;
+    }
+    .maintextinput {
+        padding: 15px 20px 0 20px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+    }
 
-/*@media (min-width: 768px) and (max-width: 1299px) {*/
-/*    .main {*/
-/*        padding: 0;*/
-/*    }*/
-/*    .maincontainer {*/
-/*        display: flex;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*        flex-direction: column;*/
-/*        padding: 44px 0 0 0;*/
-/*    }*/
-/*    .heading {*/
-/*        padding: 0 15px 3px 15px;*/
-/*        font-size: 37px;*/
-/*        line-height: 40px;*/
-/*    }*/
-/*    .maincontainerleftright {*/
-/*        display: flex;*/
-/*        justify-content: space-between;*/
-/*        flex-direction: column;*/
-/*        padding: 0 0 0 0;*/
-/*    }*/
-/*    .left768 {*/
-/*        display: block;*/
-/*    }*/
-/*    .right768 {*/
-/*        display: block;*/
-/*    }*/
+    .textareaandbutton {
+        width: 698px;
+        /*height: 150px;*/
+        display: inline-block;
+        position: relative;
+    }
+    textarea {
+        width: 100%;
+        height: 265px;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    .maintextarea {
+        margin: 30px 0 0 0;
+        padding: 15px 20px 0 20px;
+    }
+    .textareabutton {
+        bottom: -30px;
+        right: 10px;
+        width: 70px;
+        height: 70px;
+    }
+    .textareabutton2 {
+        bottom: -34px;
+        right: 10px;
+        width: 70px;
+        height: 70px;
+    }
+    .textareabuttonimg {
+        width: 46%;
+    }
+    .maintextcomment {
+        font-size: 14px;
+        line-height: 10px;
+        margin: 24px 0 0 0;
+    }
+    .maintextbottom {
+        padding: 22px 0 0 0;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    .maintextanswer {
+        margin: 20px 0 0 0;
+        font-size: 18px;
+        line-height: 13px;
+    }
+    .maintexth70pxright {
+        padding: 0 0 0 84px;
+    }
+    .maintextcancel {
+        font-size: 18px;
+        line-height: 13px;
+        margin: 16px 0 -35px 0;
+    }
+    .maininput {
+        width: 738px;
+        height: 180px;
+    }
+}
 
-/*    .maincontainerleft {*/
-/*        width: 738px;*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        flex-direction: column;*/
-/*    }*/
-/*    .mainimg {*/
-/*        width: 100%;*/
-/*        padding: 50px 0 35px 0;*/
-/*    }*/
-/*    .maintext {*/
-/*        padding: 12px 0 0 0;*/
-/*        font-size: 14px;*/
-/*        font-weight: 600;*/
-/*        line-height: 160%;*/
-/*    }*/
-/*    .maintexthide {*/
-/*        display: none;*/
-/*    }*/
-/*    .maintextshow {*/
-/*        width: 738px;*/
-/*        display: flex;*/
-/*        padding: 15px 0 0 0;*/
-/*        font-size: 18px;*/
-/*        font-weight: 700;*/
-/*        line-height: 160%;*/
-/*        color: #2ED4E2;*/
-/*        text-shadow: 0 0 5px #73F4FF;*/
-/*        cursor: pointer;*/
-/*    }*/
-/*    .maincontainerright {*/
-/*        display: flex;*/
-/*        flex-direction: row;*/
-/*    }*/
+@media (max-width: 767px) {
+    .main {
+        padding: 0;
+    }
+    .maincontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .heading {
+        padding: 13px 0 0 16px;
+        font-size: 28px;
+        line-height: 34px;
+        text-shadow: 2px 2px 0 #2ED4E2, 0 0 20px #73F4FF;
+    }
+    .maincontainerleftright {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 0 20px 0;
+    }
+    .maincontainerleft {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mainimg {
+        width: 288px;
+        padding: 25px 0 14px 0;
+    }
+    .maintext {
+        display: none;
+    }
+    .maintext320 {
+        width: 288px;
+        display: flex;
+        padding: 16px 0 0 0;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 160%;
+    }
+    .maintexthide {
+        display: none;
+    }
+    .maintextshow {
+        display: flex;
+        width: 288px;
+        padding: 12px 0 0 0;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 71%;
+        color: #2ED4E2;
+        text-shadow: 0 0 5px #73F4FF;
+        cursor: pointer;
+    }
+    .maincontainerright {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .desktop {
+        display: none;
+    }
+    .ipad {
+        display: none;
+    }
+    .iphone {
+        display: block;
+    }
+    .yellowbutton {
+        margin: 40px 0 0 0;
+        width: 276px;
+        height: 55px;
+      }
+    .yellowbutton:hover {
+       box-shadow: 0 0 30px rgba(233, 184, 83, 0.8);
+    }
+    .yellowbuttontext {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .maintexth5 {
+        display: flex;
+        width: 288px;
+        padding: 50px 0 0 0;
+        font-size: 21px;
+    }
+    .maintexth5plus23pxbottom {
+        display: flex;
+        width: 288px;
+        padding: 50px 0 0 0;
+        font-size: 21px;
+    }
+    .cyanpinkbuttons {
+        display: flex;
+        width: 288px;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 27px 0 0 0;
+    }
+    .cyanbutton {
+        margin: 0;
+        width: 78px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .pinkbutton {
+        margin: 0;
+        width: 122px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .line {
+        width: 288px;
+        padding: 27px 0 0 0;
+    }
+    .maintextvote {
+        width: 288px;
+        padding: 20px 0 0 0;
+        font-size: 14px;
+    }
+    .maintextvotespan {
+        width: 288px;
+        padding: 20px 0 0 0;
+        font-size: 14px;
+    }
+    .maintextvotetimespan {
+        display: none;
+    }
+    .maintextvotetimespan320 {
+        display: block;
+        width: 288px;
+        padding: 11px 0 0 0;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 70%;
+        color: white;
+    }
 
-/*    .ipad {*/
-/*        display: block;*/
-/*    }*/
-/*    .iphone {*/
-/*        display: none;*/
-/*    }*/
-/*    .yellowbutton {*/
-/*        margin: 35px 0 0 8px;*/
-/*        width: 335px;*/
-/*        height: 70px;*/
-/*    }*/
-/*    .yellowbutton:hover {*/
-/*        box-shadow: 0 0 30px rgba(233, 184, 83, 0.8);*/
-/*    }*/
-/*    .yellowbuttontext {*/
-/*        font-size: 18px;*/
-/*        line-height: 24px;*/
-/*    }*/
-/*    .maintexth5 {*/
-/*        display: flex;*/
-/*        width: 328px;*/
-/*        padding: 70px 0 0 0;*/
-/*        font-size: 24px;*/
-/*    }*/
-/*    .maintexth5plus23pxbottom {*/
-/*        display: flex;*/
-/*        width: 328px;*/
-/*        padding: 50px 0 0 0;*/
-/*        font-size: 21px;*/
-/*    }*/
-/*    .cyanpinkbuttons {*/
-/*        display: flex;*/
-/*        width: 328px;*/
-/*        flex-direction: row;*/
-/*        justify-content: space-around;*/
-/*        padding: 27px 0 0 0;*/
-/*    }*/
-/*    .cyanbutton {*/
-/*        margin: 0;*/
-/*        width: 78px;*/
-/*        height: 55px;*/
-/*        font-size: 16px;*/
-/*    }*/
-/*    .pinkbutton {*/
-/*        margin: 0;*/
-/*        width: 122px;*/
-/*        height: 55px;*/
-/*        font-size: 16px;*/
-/*    }*/
-/*    .line {*/
-/*        width: 354px;*/
-/*        padding: 27px 0 0 0;*/
-/*    }*/
-/*    .maintextvote {*/
-/*        width: 328px;*/
-/*        padding: 20px 0 0 0;*/
-/*        font-size: 14px;*/
-/*    }*/
-/*    .maintextvotespan {*/
-/*        width: 328px;*/
-/*        padding: 20px 0 0 0;*/
-/*        font-size: 14px;*/
-/*    }*/
-/*    .maintextvotetimespan {*/
-/*        width: 328px;*/
-/*        padding: 11px 0 0 0;*/
-/*        font-size: 16px;*/
-/*        font-weight: 600;*/
-/*        line-height: 70%;*/
-/*        color: white;*/
-/*    }*/
-/*    .maintextvotetimespan320 {*/
-/*        display: none;*/
-/*    }*/
-/*    .socials {*/
-/*        display: flex;*/
-/*        width: 355px;*/
-/*        flex-direction: row;*/
-/*        justify-content: space-between;*/
-/*        padding: 40px 0 0 0;*/
-/*    }*/
-/*    .social {*/
-/*        margin: 0 0 0 0;*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        justify-content: center;*/
-/*        width: 64px;*/
-/*        height: 64px;*/
-/*        cursor: pointer;*/
-/*        background: #201C6C;*/
-/*        border-radius: 2px;*/
-/*        transform: skew(-11deg);*/
-/*    }*/
-/*    .socialimg {*/
-/*        max-width: 55%;*/
-/*        max-height: 55%;*/
-/*    }*/
-/*    .maincontainerbottom {*/
-/*        width: 738px;*/
-/*    }*/
-/*    .maintextinput {*/
-/*        padding: 15px 20px 0 20px;*/
-/*        font-weight: 600;*/
-/*        font-size: 14px;*/
-/*        line-height: 160%;*/
-/*    }*/
+    .socials {
+        display: flex;
+        width: 288px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0 0 0;
+    }
+    .social {
+        margin: 0 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 54px;
+        height: 50px;
+        cursor: pointer;
+        background: #201C6C;
+        border-radius: 2px;
+        transform: skew(-11deg);
+    }
+    .socialimg {
+        max-width: 55%;
+        max-height: 55%;
+    }
+    .maincontainerbottom {
+        width: 288px;
+    }
+    .maintextinput {
+        padding: 15px 20px 0 20px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+    }
 
-/*    .textareaandbutton {*/
-/*        width: 698px;*/
-/*        !*height: 150px;*!*/
-/*        display: inline-block;*/
-/*        position: relative;*/
-/*    }*/
-/*    textarea {*/
-/*        width: 100%;*/
-/*        height: 265px;*/
-/*        font-size: 14px;*/
-/*        line-height: 160%;*/
-/*    }*/
-/*    .maintextarea {*/
-/*        margin: 30px 0 0 0;*/
-/*        padding: 15px 20px 0 20px;*/
-/*    }*/
-/*    .textareabutton {*/
-/*        bottom: -30px;*/
-/*        right: 10px;*/
-/*        width: 70px;*/
-/*        height: 70px;*/
-/*    }*/
-/*    .textareabutton2 {*/
-/*        bottom: -34px;*/
-/*        right: 10px;*/
-/*        width: 70px;*/
-/*        height: 70px;*/
-/*    }*/
-/*    .textareabuttonimg {*/
-/*        width: 46%;*/
-/*    }*/
-/*    .maintextcomment {*/
-/*        font-size: 14px;*/
-/*        line-height: 10px;*/
-/*        margin: 24px 0 0 0;*/
-/*    }*/
-/*    .maintextbottom {*/
-/*        padding: 22px 0 0 0;*/
-/*        font-size: 14px;*/
-/*        line-height: 160%;*/
-/*    }*/
-/*    .maintextanswer {*/
-/*        margin: 20px 0 0 0;*/
-/*        font-size: 18px;*/
-/*        line-height: 13px;*/
-/*    }*/
-/*    .maintexth70pxright {*/
-/*        padding: 0 0 0 84px;*/
-/*    }*/
-/*    .maintextcancel {*/
-/*        font-size: 18px;*/
-/*        line-height: 13px;*/
-/*        margin: 16px 0 -35px 0;*/
-/*    }*/
-/*    .maininput {*/
-/*        width: 738px;*/
-/*        height: 180px;*/
-/*    }*/
-/*}*/
-
-
-
-
-
-
-
-
-
-
-/*@media (max-width: 767px) {*/
-/*    .main {*/
-/*        padding: 0;*/
-/*    }*/
-/*    .maincontainer {*/
-/*        display: flex;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*        flex-direction: column;*/
-/*        padding: 0;*/
-/*    }*/
-/*    .heading {*/
-/*        padding: 13px 0 0 16px;*/
-/*        font-size: 28px;*/
-/*        line-height: 34px;*/
-/*        text-shadow: 2px 2px 0 #2ED4E2, 0 0 20px #73F4FF;*/
-/*    }*/
-/*    .maincontainerleftright {*/
-/*        display: flex;*/
-/*        justify-content: space-between;*/
-/*        flex-direction: column;*/
-/*        padding: 0 0 20px 0;*/
-/*    }*/
-/*    .maincontainerleft {*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        flex-direction: column;*/
-/*    }*/
-/*    .mainimg {*/
-/*        width: 288px;*/
-/*        padding: 25px 0 14px 0;*/
-/*    }*/
-/*    .maintext {*/
-/*        display: none;*/
-/*    }*/
-/*    .maintext320 {*/
-/*        width: 288px;*/
-/*        display: flex;*/
-/*        padding: 16px 0 0 0;*/
-/*        font-size: 14px;*/
-/*        font-weight: 600;*/
-/*        line-height: 160%;*/
-/*    }*/
-/*    .maintexthide {*/
-/*        display: none;*/
-/*    }*/
-/*    .maintextshow {*/
-/*        display: flex;*/
-/*        width: 288px;*/
-/*        padding: 12px 0 0 0;*/
-/*        font-size: 16px;*/
-/*        font-weight: 700;*/
-/*        line-height: 71%;*/
-/*        color: #2ED4E2;*/
-/*        text-shadow: 0 0 5px #73F4FF;*/
-/*        cursor: pointer;*/
-/*    }*/
-/*    .maincontainerright {*/
-/*        display: flex;*/
-/*        width: 100%;*/
-/*        align-items: center;*/
-/*        flex-direction: column;*/
-/*    }*/
-/*    .ipad {*/
-/*        display: none;*/
-/*    }*/
-/*    .iphone {*/
-/*        display: block;*/
-/*    }*/
-/*    .yellowbutton {*/
-/*        margin: 40px 0 0 0;*/
-/*        width: 276px;*/
-/*        height: 55px;*/
-/*      }*/
-/*    .yellowbutton:hover {*/
-/*       box-shadow: 0 0 30px rgba(233, 184, 83, 0.8);*/
-/*    }*/
-/*    .yellowbuttontext {*/
-/*        font-size: 16px;*/
-/*        line-height: 24px;*/
-/*    }*/
-/*    .maintexth5 {*/
-/*        display: flex;*/
-/*        width: 288px;*/
-/*        padding: 50px 0 0 0;*/
-/*        font-size: 21px;*/
-/*    }*/
-/*    .maintexth5plus23pxbottom {*/
-/*        display: flex;*/
-/*        width: 288px;*/
-/*        padding: 50px 0 0 0;*/
-/*        font-size: 21px;*/
-/*    }*/
-/*    .cyanpinkbuttons {*/
-/*        display: flex;*/
-/*        width: 288px;*/
-/*        flex-direction: row;*/
-/*        justify-content: space-around;*/
-/*        padding: 27px 0 0 0;*/
-/*    }*/
-/*    .cyanbutton {*/
-/*        margin: 0;*/
-/*        width: 78px;*/
-/*        height: 55px;*/
-/*        font-size: 16px;*/
-/*    }*/
-/*    .pinkbutton {*/
-/*        margin: 0;*/
-/*        width: 122px;*/
-/*        height: 55px;*/
-/*        font-size: 16px;*/
-/*    }*/
-/*    .line {*/
-/*        width: 288px;*/
-/*        padding: 27px 0 0 0;*/
-/*    }*/
-/*    .maintextvote {*/
-/*        width: 288px;*/
-/*        padding: 20px 0 0 0;*/
-/*        font-size: 14px;*/
-/*    }*/
-/*    .maintextvotespan {*/
-/*        width: 288px;*/
-/*        padding: 20px 0 0 0;*/
-/*        font-size: 14px;*/
-/*    }*/
-/*    .maintextvotetimespan {*/
-/*        display: none;*/
-/*    }*/
-/*    .maintextvotetimespan320 {*/
-/*        display: block;*/
-/*        width: 288px;*/
-/*        padding: 11px 0 0 0;*/
-/*        font-size: 16px;*/
-/*        font-weight: 600;*/
-/*        line-height: 70%;*/
-/*        color: white;*/
-/*    }*/
-
-/*    .socials {*/
-/*        display: flex;*/
-/*        width: 288px;*/
-/*        flex-direction: row;*/
-/*        justify-content: space-between;*/
-/*        padding: 20px 0 0 0;*/
-/*    }*/
-/*    .social {*/
-/*        margin: 0 0 0 0;*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        justify-content: center;*/
-/*        width: 54px;*/
-/*        height: 50px;*/
-/*        cursor: pointer;*/
-/*        background: #201C6C;*/
-/*        border-radius: 2px;*/
-/*        transform: skew(-11deg);*/
-/*    }*/
-/*    .socialimg {*/
-/*        max-width: 55%;*/
-/*        max-height: 55%;*/
-/*    }*/
-/*    .maincontainerbottom {*/
-/*        width: 288px;*/
-/*    }*/
-/*    .maintextinput {*/
-/*        padding: 15px 20px 0 20px;*/
-/*        font-weight: 600;*/
-/*        font-size: 14px;*/
-/*        line-height: 160%;*/
-/*    }*/
-
-/*    .textareaandbutton {*/
-/*        width: 248px;*/
-/*        !*height: 150px;*!*/
-/*        display: inline-block;*/
-/*        position: relative;*/
-/*    }*/
-/*    textarea {*/
-/*        width: 100%;*/
-/*        height: 135px;*/
-/*        font-size: 14px;*/
-/*        line-height: 160%;*/
-/*     }*/
-/*    .maintextarea {*/
-/*        margin: 30px 0 0 0;*/
-/*        padding: 15px 20px 0 20px;*/
-/*    }*/
-/*    .textareabutton {*/
-/*        bottom: -20px;*/
-/*        right: -12px;*/
-/*        width: 54px;*/
-/*        height: 54px;*/
-/*    }*/
-/*    .textareabutton2 {*/
-/*        bottom: -20px;*/
-/*        right: -12px;*/
-/*        width: 54px;*/
-/*        height: 54px;*/
-/*    }*/
-/*    .textareabuttonimg {*/
-/*        width: 46%;*/
-/*    }*/
-/*    .maintextcomment {*/
-/*        font-size: 14px;*/
-/*        line-height: 10px;*/
-/*        margin: 24px 0 0 0;*/
-/*    }*/
-/*    .maintextbottom {*/
-/*        padding: 22px 0 0 0;*/
-/*        font-size: 14px;*/
-/*        line-height: 160%;*/
-/*    }*/
-/*    .maintextanswer {*/
-/*        margin: 20px 0 0 0;*/
-/*        font-size: 16px;*/
-/*        line-height: 12px;*/
-/*    }*/
-/*    .maintexth70pxright {*/
-/*        padding: 0 0 0 20px;*/
-/*    }*/
-/*    .maintextcancel {*/
-/*        font-size: 16px;*/
-/*        line-height: 12px;*/
-/*        margin: 16px 0 -35px 0;*/
-/*    }*/
-/*    .maininput {*/
-/*        width: 288px;*/
-/*        height: 209px;*/
-/*    }*/
-/*}*/
+    .textareaandbutton {
+        width: 248px;
+        /*height: 150px;*/
+        display: inline-block;
+        position: relative;
+    }
+    textarea {
+        width: 100%;
+        height: 135px;
+        font-size: 14px;
+        line-height: 160%;
+     }
+    .maintextarea {
+        margin: 30px 0 0 0;
+        padding: 15px 20px 0 20px;
+    }
+    .textareabutton {
+        bottom: -20px;
+        right: -12px;
+        width: 54px;
+        height: 54px;
+    }
+    .textareabutton2 {
+        bottom: -20px;
+        right: -12px;
+        width: 54px;
+        height: 54px;
+    }
+    .textareabuttonimg {
+        width: 46%;
+    }
+    .maintextcomment {
+        font-size: 14px;
+        line-height: 10px;
+        margin: 24px 0 0 0;
+    }
+    .maintextbottom {
+        padding: 22px 0 0 0;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    .maintextanswer {
+        margin: 20px 0 0 0;
+        font-size: 16px;
+        line-height: 12px;
+    }
+    .maintexth70pxright {
+        padding: 0 0 0 20px;
+    }
+    .maintextcancel {
+        font-size: 16px;
+        line-height: 12px;
+        margin: 16px 0 -35px 0;
+    }
+    .maininput {
+        width: 288px;
+        height: 209px;
+    }
+}
