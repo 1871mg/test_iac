@@ -7,7 +7,7 @@ npm i
 npm start
 
 Figma:
-<img src="https://raw.githubusercontent.com/1871mg/test_iac/main/figma.png" alt""/>
+<img src="https://raw.githubusercontent.com/1871mg/test_iac/main/figma.png" alt="">
 
 Результат:
-<img src="https://raw.githubusercontent.com/1871mg/test_iac/main/done.png" alt""/>
+<img src="https://raw.githubusercontent.com/1871mg/test_iac/main/done.png" alt="">
